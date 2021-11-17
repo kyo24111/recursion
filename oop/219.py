@@ -19,6 +19,18 @@ class File:
         if self.locked == False:
             self.content = data + self.content
             return self.content
+    
+    def appendContent(self, data):
+        if self.locked == False:
+            self.content = self.content + data
+            return self.content
+
+    def addContent(self, data, position):
+        if self.locked == False:
+            self.content == self.content[:7] + data + self.content[7:]
+            return self.content
+
+
 
     def showFileLocation(self):
         return self.parentFolder + ">" + self.fileName + self.fileExtension

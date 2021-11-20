@@ -19,7 +19,7 @@ class Invoice :
 
         return  total * 1.1 if taxes else total
 
-    # 請求書の全項目と数量を出力します。「item :shampoo, price :10, quantity:7」のようにそれぞれのアイテムを出力してください。
+    # 請求書の全項目と数量を出力します。「item :shampoo, price :10, quantity:7」のようにそれぞれのア　イテムを出力してください。
     def printBuyingItems(self) :
         print("Printing the Item List...")
         currentNode = self.invoiceItemHeadNode

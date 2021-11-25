@@ -1,5 +1,4 @@
-def test_run(x):
-    for i in range(0,x):
-        print(i)
+arr = [1,2,3,4,5]
 
-test_run(5)
+for i in arr[::2]:
+    print(i)

@@ -21,7 +21,5 @@ class Planet:
         ctp = getVolume(self) - getVolume(planet)
         return ctp
 
-        
-
 
 

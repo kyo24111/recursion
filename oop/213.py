@@ -42,7 +42,7 @@ class Animal:
             return True
         else:
             return False
-        
+
 rabbit = Animal("rabbit", "leporidae", "this is rabbit", 10, 0.3, False, 20, "img1", "2020/5/25")
 elephant = Animal("elephant", "Elephantidae", "this is elephant", 300, 3, False, 5, "img2", "2020/5/26")
 

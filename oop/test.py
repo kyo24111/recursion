@@ -1,4 +1,6 @@
-arr = [1,2,3,4,5]
+email = "abcde"
+def test(string):
+    for i in range (0,len(string)):
+        print(i)
 
-for i in arr[::2]:
-    print(i)
+test(email)

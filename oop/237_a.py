@@ -1,7 +1,7 @@
 def subscriberListCheck(emailList):
     arr = []
     for email in emailList:
-        if isValidEmail(email): arr.append(email) 
+        if isValidEmail(email): arr.append(email)
     return arr
 
 def isValidEmail(email):

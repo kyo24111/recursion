@@ -3,10 +3,18 @@ def generateAlphabet(firstAlphabet,secondAlphabet):
     # lowercase
     n_first = str(firstAlphabet).lower()
     n_second = str(secondAlphabet).lower()
-    if ord(n_first) >= ord(n_second):
+    print("n_first = " + n_first + " , n_second = " + n_second )
+    print(ord(n_first))
+    start_point = 0
+    end_point = 0
+    if ord(n_first) <= ord(n_second):
         start_point = char_list.index(n_first)
         end_point = char_list.index(n_second)
+        print("start = " + str(start_point))
+        print("end = " + str(end_point))
     else:
         start_point = char_list.index(n_second)
         end_point = char_list.index(n_first)
     return char_list[start_point:end_point+1]
+
+print(generateAlphabet("A","D"))

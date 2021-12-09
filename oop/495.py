@@ -2,11 +2,8 @@ import math
 
 # エラトステネスのふるいのアルゴリズム
 def allNPrimesSieve(n):
-    # サイズnのブーリアン値trueを持つリストを生成します。キャッシュ
     cache = [True] * n
     for currentPrime in range(2, math.ceil(math.sqrt(n))):
-        # キャッシュ内の素数(p)の倍数をすべてfalseにしていきます。
-        # iは2からスタートします。
         if cache[currentPrime] == False: continue #trueのやつだけみる
         i = 2
         ip = i * currentPrime

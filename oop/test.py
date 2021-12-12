@@ -1,3 +1,7 @@
-test = [1,2,3,4]
-a = test.index(3)
-print(a)
+def makeHashmap(x):
+    hashmap = {}
+    for i in range(x):
+        hashmap[i] = "Num" + str(i)
+    return hashmap
+
+print(makeHashmap(3))
